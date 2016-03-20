@@ -1,9 +1,12 @@
-import net.projecteuler.PrimeFinder
+package net.projecteuler
+
 import org.scalatest.{Matchers, WordSpec}
 
-/**
-  * Created by mrodrigues on 20/03/2016.
-  */
+/*
+* Problem 8
+* By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+* What is the 10 001st prime number?
+*/
 class FindNthPrimeSpec extends WordSpec with Matchers {
 
   "Nth prime finder" should {
