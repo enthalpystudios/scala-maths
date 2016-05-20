@@ -39,15 +39,12 @@ class LargestProductInGridSpec extends FeatureSpec with GivenWhenThen with Match
     Given("a grid of 20x20 filled with values")
     val grid: Map[(Int, Int), Int] = createGrid
 
-    When("the fooBarQix is called")
+    When("the largers product in grid finder is called")
 
-    val start: Long = System.currentTimeMillis()
     val largestProductInGridFinder = new LargestProductInGridFinder(grid, 4)
     val largestProduct =  largestProductInGridFinder.findLargest()
-    val end = System.currentTimeMillis() - start
-    println(end)
 
-    Then("The result should be bar")
+    Then("The result should be 70600674")
     largestProduct should be(70600674)
 
   }
